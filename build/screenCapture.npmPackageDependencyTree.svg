@@ -1,69 +1,73 @@
-<svg height="1054" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="1054" fill="#555" width="720"></rect>
+<svg height="1118" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1118" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">└─┬ gulp-htmlbuild@0.4.2 </tspan>
-<tspan x="10" y="42">  ├─┬ event-stream@3.3.4 </tspan>
-<tspan x="10" y="58">  │ ├── duplexer@0.1.1 </tspan>
-<tspan x="10" y="74">  │ ├── from@0.1.7 </tspan>
-<tspan x="10" y="90">  │ ├── map-stream@0.1.0 </tspan>
-<tspan x="10" y="106">  │ ├── split@0.3.3 </tspan>
-<tspan x="10" y="122">  │ ├── stream-combiner@0.0.4 </tspan>
-<tspan x="10" y="138">  │ └── through@2.3.8 </tspan>
-<tspan x="10" y="154">  ├─┬ gulp-util@3.0.8 </tspan>
-<tspan x="10" y="170">  │ ├── array-differ@1.0.0 </tspan>
-<tspan x="10" y="186">  │ ├── array-uniq@1.0.3 </tspan>
-<tspan x="10" y="202">  │ ├── beeper@1.1.1 </tspan>
-<tspan x="10" y="218">  │ ├─┬ chalk@1.1.3 </tspan>
-<tspan x="10" y="234">  │ │ ├── ansi-styles@2.2.1 </tspan>
-<tspan x="10" y="250">  │ │ ├── escape-string-regexp@1.0.5 </tspan>
-<tspan x="10" y="266">  │ │ ├─┬ has-ansi@2.0.0 </tspan>
-<tspan x="10" y="282">  │ │ │ └── ansi-regex@2.1.1 </tspan>
-<tspan x="10" y="298">  │ │ ├── strip-ansi@3.0.1 </tspan>
-<tspan x="10" y="314">  │ │ └── supports-color@2.0.0 </tspan>
-<tspan x="10" y="330">  │ ├── dateformat@2.0.0 </tspan>
-<tspan x="10" y="346">  │ ├─┬ fancy-log@1.3.0 </tspan>
-<tspan x="10" y="362">  │ │ └── time-stamp@1.0.1 </tspan>
-<tspan x="10" y="378">  │ ├─┬ gulplog@1.0.0 </tspan>
-<tspan x="10" y="394">  │ │ └── glogg@1.0.0 </tspan>
-<tspan x="10" y="410">  │ ├─┬ has-gulplog@0.1.0 </tspan>
-<tspan x="10" y="426">  │ │ └── sparkles@1.0.0 </tspan>
-<tspan x="10" y="442">  │ ├── lodash._reescape@3.0.0 </tspan>
-<tspan x="10" y="458">  │ ├── lodash._reevaluate@3.0.0 </tspan>
-<tspan x="10" y="474">  │ ├── lodash._reinterpolate@3.0.0 </tspan>
-<tspan x="10" y="490">  │ ├─┬ lodash.template@3.6.2 </tspan>
-<tspan x="10" y="506">  │ │ ├── lodash._basecopy@3.0.1 </tspan>
-<tspan x="10" y="522">  │ │ ├── lodash._basetostring@3.0.1 </tspan>
-<tspan x="10" y="538">  │ │ ├── lodash._basevalues@3.0.0 </tspan>
-<tspan x="10" y="554">  │ │ ├── lodash._isiterateecall@3.0.9 </tspan>
-<tspan x="10" y="570">  │ │ ├─┬ lodash.escape@3.2.0 </tspan>
-<tspan x="10" y="586">  │ │ │ └── lodash._root@3.0.1 </tspan>
-<tspan x="10" y="602">  │ │ ├─┬ lodash.keys@3.1.2 </tspan>
-<tspan x="10" y="618">  │ │ │ ├── lodash._getnative@3.9.1 </tspan>
-<tspan x="10" y="634">  │ │ │ ├── lodash.isarguments@3.1.0 </tspan>
-<tspan x="10" y="650">  │ │ │ └── lodash.isarray@3.0.4 </tspan>
-<tspan x="10" y="666">  │ │ ├── lodash.restparam@3.6.1 </tspan>
-<tspan x="10" y="682">  │ │ └── lodash.templatesettings@3.1.1 </tspan>
-<tspan x="10" y="698">  │ ├── minimist@1.2.0 </tspan>
-<tspan x="10" y="714">  │ ├─┬ multipipe@0.1.2 </tspan>
-<tspan x="10" y="730">  │ │ └── duplexer2@0.0.2 </tspan>
-<tspan x="10" y="746">  │ ├── object-assign@3.0.0 </tspan>
-<tspan x="10" y="762">  │ ├── replace-ext@0.0.1 </tspan>
-<tspan x="10" y="778">  │ ├─┬ through2@2.0.3 </tspan>
-<tspan x="10" y="794">  │ │ ├─┬ readable-stream@2.2.6 </tspan>
-<tspan x="10" y="810">  │ │ │ ├── buffer-shims@1.0.0 </tspan>
-<tspan x="10" y="826">  │ │ │ ├── isarray@1.0.0 </tspan>
-<tspan x="10" y="842">  │ │ │ ├── process-nextick-args@1.0.7 </tspan>
-<tspan x="10" y="858">  │ │ │ └── util-deprecate@1.0.2 </tspan>
-<tspan x="10" y="874">  │ │ └── xtend@4.0.1 </tspan>
-<tspan x="10" y="890">  │ └─┬ vinyl@0.5.3 </tspan>
-<tspan x="10" y="906">  │   ├── clone@1.0.2 </tspan>
-<tspan x="10" y="922">  │   └── clone-stats@0.0.1 </tspan>
-<tspan x="10" y="938">  ├── pause-stream@0.0.11 </tspan>
-<tspan x="10" y="954">  ├─┬ readable-stream@1.1.14 </tspan>
-<tspan x="10" y="970">  │ ├── core-util-is@1.0.2 </tspan>
-<tspan x="10" y="986">  │ ├── inherits@2.0.3 </tspan>
-<tspan x="10" y="1002">  │ ├── isarray@0.0.1 </tspan>
-<tspan x="10" y="1018">  │ └── string_decoder@0.10.31 </tspan>
-<tspan x="10" y="1034">  └── stream-stream@1.2.6</tspan>
+<tspan x="10" y="26">3 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ gulp-htmlbuild@0.4.2 </tspan>
+<tspan x="10" y="90">  ├─┬ event-stream@3.3.4 </tspan>
+<tspan x="10" y="106">  │ ├── duplexer@0.1.1 </tspan>
+<tspan x="10" y="122">  │ ├── from@0.1.7 </tspan>
+<tspan x="10" y="138">  │ ├── map-stream@0.1.0 </tspan>
+<tspan x="10" y="154">  │ ├── split@0.3.3 </tspan>
+<tspan x="10" y="170">  │ ├── stream-combiner@0.0.4 </tspan>
+<tspan x="10" y="186">  │ └── through@2.3.8 </tspan>
+<tspan x="10" y="202">  ├─┬ gulp-util@3.0.8 </tspan>
+<tspan x="10" y="218">  │ ├── array-differ@1.0.0 </tspan>
+<tspan x="10" y="234">  │ ├── array-uniq@1.0.3 </tspan>
+<tspan x="10" y="250">  │ ├── beeper@1.1.1 </tspan>
+<tspan x="10" y="266">  │ ├─┬ chalk@1.1.3 </tspan>
+<tspan x="10" y="282">  │ │ ├── ansi-styles@2.2.1 </tspan>
+<tspan x="10" y="298">  │ │ ├── escape-string-regexp@1.0.5 </tspan>
+<tspan x="10" y="314">  │ │ ├─┬ has-ansi@2.0.0 </tspan>
+<tspan x="10" y="330">  │ │ │ └── ansi-regex@2.1.1 </tspan>
+<tspan x="10" y="346">  │ │ ├── strip-ansi@3.0.1 </tspan>
+<tspan x="10" y="362">  │ │ └── supports-color@2.0.0 </tspan>
+<tspan x="10" y="378">  │ ├── dateformat@2.0.0 </tspan>
+<tspan x="10" y="394">  │ ├─┬ fancy-log@1.3.0 </tspan>
+<tspan x="10" y="410">  │ │ └── time-stamp@1.0.1 </tspan>
+<tspan x="10" y="426">  │ ├─┬ gulplog@1.0.0 </tspan>
+<tspan x="10" y="442">  │ │ └── glogg@1.0.0 </tspan>
+<tspan x="10" y="458">  │ ├─┬ has-gulplog@0.1.0 </tspan>
+<tspan x="10" y="474">  │ │ └── sparkles@1.0.0 </tspan>
+<tspan x="10" y="490">  │ ├── lodash._reescape@3.0.0 </tspan>
+<tspan x="10" y="506">  │ ├── lodash._reevaluate@3.0.0 </tspan>
+<tspan x="10" y="522">  │ ├── lodash._reinterpolate@3.0.0 </tspan>
+<tspan x="10" y="538">  │ ├─┬ lodash.template@3.6.2 </tspan>
+<tspan x="10" y="554">  │ │ ├── lodash._basecopy@3.0.1 </tspan>
+<tspan x="10" y="570">  │ │ ├── lodash._basetostring@3.0.1 </tspan>
+<tspan x="10" y="586">  │ │ ├── lodash._basevalues@3.0.0 </tspan>
+<tspan x="10" y="602">  │ │ ├── lodash._isiterateecall@3.0.9 </tspan>
+<tspan x="10" y="618">  │ │ ├─┬ lodash.escape@3.2.0 </tspan>
+<tspan x="10" y="634">  │ │ │ └── lodash._root@3.0.1 </tspan>
+<tspan x="10" y="650">  │ │ ├─┬ lodash.keys@3.1.2 </tspan>
+<tspan x="10" y="666">  │ │ │ ├── lodash._getnative@3.9.1 </tspan>
+<tspan x="10" y="682">  │ │ │ ├── lodash.isarguments@3.1.0 </tspan>
+<tspan x="10" y="698">  │ │ │ └── lodash.isarray@3.0.4 </tspan>
+<tspan x="10" y="714">  │ │ ├── lodash.restparam@3.6.1 </tspan>
+<tspan x="10" y="730">  │ │ └── lodash.templatesettings@3.1.1 </tspan>
+<tspan x="10" y="746">  │ ├── minimist@1.2.0 </tspan>
+<tspan x="10" y="762">  │ ├─┬ multipipe@0.1.2 </tspan>
+<tspan x="10" y="778">  │ │ └── duplexer2@0.0.2 </tspan>
+<tspan x="10" y="794">  │ ├── object-assign@3.0.0 </tspan>
+<tspan x="10" y="810">  │ ├── replace-ext@0.0.1 </tspan>
+<tspan x="10" y="826">  │ ├─┬ through2@2.0.3 </tspan>
+<tspan x="10" y="842">  │ │ ├─┬ readable-stream@2.2.9 </tspan>
+<tspan x="10" y="858">  │ │ │ ├── buffer-shims@1.0.0 </tspan>
+<tspan x="10" y="874">  │ │ │ ├── isarray@1.0.0 </tspan>
+<tspan x="10" y="890">  │ │ │ ├── process-nextick-args@1.0.7 </tspan>
+<tspan x="10" y="906">  │ │ │ ├── string_decoder@1.0.0 </tspan>
+<tspan x="10" y="922">  │ │ │ └── util-deprecate@1.0.2 </tspan>
+<tspan x="10" y="938">  │ │ └── xtend@4.0.1 </tspan>
+<tspan x="10" y="954">  │ └─┬ vinyl@0.5.3 </tspan>
+<tspan x="10" y="970">  │   ├── clone@1.0.2 </tspan>
+<tspan x="10" y="986">  │   └── clone-stats@0.0.1 </tspan>
+<tspan x="10" y="1002">  ├── pause-stream@0.0.11 </tspan>
+<tspan x="10" y="1018">  ├─┬ readable-stream@1.1.14 </tspan>
+<tspan x="10" y="1034">  │ ├── core-util-is@1.0.2 </tspan>
+<tspan x="10" y="1050">  │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="1066">  │ ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="1082">  │ └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="1098">  └── stream-stream@1.2.6</tspan>
 </text>
 </svg>

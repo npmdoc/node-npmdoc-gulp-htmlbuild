@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-htmlbuild.gulp-htmlbuild">
+            function <span class="apidocSignatureSpan"></span>gulp-htmlbuild
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-htmlbuild.</span>builder</span>
 
         </li>
@@ -148,6 +157,42 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-htmlbuild" id="apidoc.module.gulp-htmlbuild">module gulp-htmlbuild</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-htmlbuild.gulp-htmlbuild" id="apidoc.element.gulp-htmlbuild.gulp-htmlbuild">
+        function <span class="apidocSignatureSpan"></span>gulp-htmlbuild
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-htmlbuild = function (config) {
+
+  function htmlbuildFile(file, callback) {
+
+    if (file.isNull()) {
+      return callback(null, file); // pass along
+    }
+
+    if (file.isStream()) {
+      return callback(new PluginError(PLUGIN_NAME, &#x27;Streaming not supported&#x27;, {
+        fileName: file.path
+      }));
+    }
+
+    parser.parse(file)
+      .pipe(builder.build(config))
+      .pipe(es.wait(function (error, content) {
+        file.contents = new Buffer(content);
+        callback(error, file);
+      }));
+  }
+
+  return es.map(htmlbuildFile);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
 
