@@ -1,6 +1,6 @@
 # npmdoc-gulp-htmlbuild
 
-#### api documentation for  [gulp-htmlbuild (v0.4.2)](https://github.com/Janpot/gulp-htmlbuild)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-htmlbuild.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-htmlbuild) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-htmlbuild.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-htmlbuild)
+#### basic api documentation for  [gulp-htmlbuild (v0.4.2)](https://github.com/Janpot/gulp-htmlbuild)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-htmlbuild.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-htmlbuild) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-htmlbuild.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-htmlbuild)
 
 #### Extract content from html documents and replace by build result
 
@@ -78,7 +78,8 @@
     "scripts": {
         "test": "gulp mocha"
     },
-    "version": "0.4.2"
+    "version": "0.4.2",
+    "bin": {}
 }
 ```
 
