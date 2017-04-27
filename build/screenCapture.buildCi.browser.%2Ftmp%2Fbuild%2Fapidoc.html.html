@@ -81,6 +81,12 @@
 
         </li>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-htmlbuild.</span>preprocessUtil</span>
+
+        </li>
+
     </ol></li>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-htmlbuild.builder">module gulp-htmlbuild.builder</a><ol>
@@ -146,6 +152,19 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-htmlbuild.preprocessUtil">module gulp-htmlbuild.preprocessUtil</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-htmlbuild.preprocessUtil.pathFromUrl">
+            function <span class="apidocSignatureSpan">gulp-htmlbuild.preprocessUtil.</span>pathFromUrl
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -193,6 +212,8 @@
 
 
 
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -228,7 +249,23 @@
     es.join('\n')
   );
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (file.isStream()) {
+    return callback(new PluginError(PLUGIN_NAME, 'Streaming not supported', {
+      fileName: file.path
+    }));
+  }
+
+  parser.parse(file)
+    .pipe(builder.<span class="apidocCodeKeywordSpan">build</span>(config))
+    .pipe(es.wait(function (error, content) {
+      file.contents = new Buffer(content);
+      callback(error, file);
+    }));
+}
+
+return es.map(htmlbuildFile);
+...</pre></li>
     </ul>
 
 
@@ -268,7 +305,23 @@
 
   return token;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    fixtures.forEach(function (fixture) {
+var spec = util.format(
+  'should recognize "%s" as a %s', fixture.line, fixture.expect.type
+);
+
+it(spec, function () {
+  var token = parser.<span class="apidocCodeKeywordSpan">_tokenize</span>(fixture.line);
+  assert.strictEqual(fixture.line, token.line);
+  for (var property in fixture.expect) {
+    var value = fixture.expect[property];
+      if (value &amp;&amp; value.length) {
+          expect(token[property]).deep.equal(value);
+      } else {
+          assert.propertyVal(token, property, value);
+...</pre></li>
     </ul>
 
 
@@ -354,7 +407,22 @@
 
   return result;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  if (file.isStream()) {
+    return callback(new PluginError(PLUGIN_NAME, 'Streaming not supported', {
+      fileName: file.path
+    }));
+  }
+
+  parser.<span class="apidocCodeKeywordSpan">parse</span>(file)
+    .pipe(builder.build(config))
+    .pipe(es.wait(function (error, content) {
+      file.contents = new Buffer(content);
+      callback(error, file);
+    }));
+}
+...</pre></li>
     </ul>
 
 
@@ -474,6 +542,48 @@ gulp.src(['./index.html'])
       // then write the build result path to it
       block.write('buildresult.js');
       block.end();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-htmlbuild.preprocessUtil" id="apidoc.module.gulp-htmlbuild.preprocessUtil">module gulp-htmlbuild.preprocessUtil</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-htmlbuild.preprocessUtil.pathFromUrl" id="apidoc.element.gulp-htmlbuild.preprocessUtil.pathFromUrl">
+        function <span class="apidocSignatureSpan">gulp-htmlbuild.preprocessUtil.</span>pathFromUrl
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pathFromUrl(url) {
+  var parsed = urlUtil.parse(url);
+  return urlUtil.format({
+    protocol: parsed.protocol,
+    hostname: parsed.hostname,
+    port: parsed.port,
+    pathname: parsed.pathname
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+util = require('util');
+
+module.exports = function (buildFn) {
+
+  function extractCss(line) {
+var matched = /(\s*)&lt;link.+href=['"]([^"']+)["']/.exec(line);
+if (matched) {
+  return preprocessUtil.<span class="apidocCodeKeywordSpan">pathFromUrl</span>(matched[2]);
+}
+  }
+
+  return function (block) {
+
+function templateCss(path) {
+  var template = block.indent + '&lt;link rel="stylesheet" href="%s"/&gt;';
 ...</pre></li>
     </ul>
 
